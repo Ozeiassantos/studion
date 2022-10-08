@@ -133,9 +133,13 @@
                     <span class="logo-studion__subtitle">Eventos</span>
                 </h2>
                 <form class="footer__form">
-                    <label>receva news e promoções</label>
-                    <input type="email" placeholder="email">
-                    <button type="submit">Enviar</button>
+                    <label for="email">receva news e promoções</label>
+                    <div class="footer__email">
+                        <input id="email" type="email" placeholder="email">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane fa-2x"></i>
+                        </button>
+                    </div>
                 </form>
                 <ul class="footer__social">
                     <li>
@@ -147,7 +151,7 @@
                         <a href="https://twitter.com/" target="_blank">
                             <span class="fa-stack">
                                 <i class="fa-solid fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
                               </span>
                         </a>
                     </li>
@@ -165,7 +169,7 @@
             <hr />
 
             <p>
-                <small>studi<span>ON</span>- Todos os direitos reservamos</small>
+                <small>studi<span class="copy--primary">ON</span>- Todos os direitos reservamos</small>
             </p>
 
         </footer>

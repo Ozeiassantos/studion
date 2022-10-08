@@ -102,6 +102,7 @@ ul {
 .slide {
     position: relative;
     height: calc(90vh - 7.75rem);
+    overflow: hidden;
 }
 
 .slide__background-image {
@@ -113,7 +114,7 @@ ul {
 
 .slide__copy {
     position: absolute;
-    top: 6.25rem;
+    top: 0;
     left: 50vw;
 }
 
@@ -128,7 +129,7 @@ ul {
     font-size: 6.25rem;
     text-transform: uppercase;
     line-height: 6.25rem;
-    margin: 0;
+    margin: 2.875rem 0;
 }
 
 .slide__copy h2 span {
@@ -240,6 +241,7 @@ ul {
 .quote__copy {
     background-color: #fff;
     padding: 5.625rem 4.375rem;
+    margin: 7.5625rem 0;
 }
 
 .quote__copy h6 {
@@ -273,17 +275,19 @@ ul {
 .footer {
     background-color: #000;
     color: #fff;
-    padding:0 1rem ;
+    padding: 0 1rem ;
 }
 
 .footer__container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     align-items: center;
+    padding: 5.25rem 0 3.75rem 0;
 }
 
 .footer .logo-studion {
     justify-self: start;
+    margin: 0;
 }
 
 .logo-studion__subtitle {
@@ -291,9 +295,86 @@ ul {
 }
 
 .footer__form {
-    justify-self: center;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 10ch auto;
+    gap: 1.25rem;
+}
+
+.footer__form label {
+    font-size: .875;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footer__email {
+    display: grid;
+    grid-template-columns: auto 3.375rem;
+    width: 100%;
+}
+
+.footer__form input {
+    width: 100%;
+    background-color: var(--colorprimary);
+    border: unset;
+    padding: 1rem;
+    font-size: .875;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.footer__form input::placeholder {
+    color: #000;
+}
+
+.footer__form input:focus {
+    outline: unset;
+}
+
+.footer__form button {
+    cursor: pointer;
+    border: unset;
+    height: 100%;
+}
+
+.footer__form button:hover {
+   color: #fff;
+   background-color: var(--color-copy);
 }
 
 .footer__social {
     justify-self: end;
+}
+
+.footer__social a,
+.footer__social a:visited,
+.footer__social a:active {
+    color: #fff;
+    margin: .2rem;
+}
+
+.footer__social a .fa-twitter ,
+.footer__social a:visited .fa-twitter,
+.footer__social a:active .fa-twitter{
+    color: #000;
+}
+
+.footer__social a .fa-youtube ,
+.footer__social a:visited .fa-youtube,
+.footer__social a:active .fa-youtube{
+    color: #000;
+}
+
+.footer hr {
+    border-color: #fff4;
+    margin: 0;
+}
+
+.footer p {
+    text-align: center;
+    font-size: .875rem;
+    font-weight: 300;
+    margin: 2.3rem 0;
+
 }
